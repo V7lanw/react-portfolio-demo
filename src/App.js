@@ -1,5 +1,9 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// components
+import LiveCode from './component/LiveCode';
+import GitHubCard from './component/GitHubCard';
 
 function App() {
   return (
@@ -9,6 +13,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <LiveCode />
+        <GitHubCard />
         <a
           className="App-link"
           href="https://reactjs.org"
