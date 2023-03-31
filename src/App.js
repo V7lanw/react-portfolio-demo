@@ -1,29 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 // components
-import LiveCode from './component/LiveCode';
-import GitHubCard from './component/GitHubCard';
+import Header from './component/header/Header.js';
+import Topbar from './component/topbar';
+import Intro from './component/intro';
+import Experience from './component/experience';
+import Portfolio from './component/portfolio';
+import Testimonials from './component/testimonials';
+import Contact from './component/contact';
+import Footer from './component/footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <LiveCode />
-        <GitHubCard />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+        <Topbar />
+        <Intro />
+        <Experience />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+        <Footer />
     </div>
   );
 }
